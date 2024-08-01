@@ -11,6 +11,16 @@ function PublicRoutes() {
   return (
     <Routes>
       <Route
+        path="/"
+        element={
+          isAuthenticated ? (
+            <Navigate to="/products" />
+          ) : (
+            <Navigate to="/login" />
+          )
+        }
+      />
+      <Route
         path="/login"
         element={isAuthenticated ? <Navigate to="/404" /> : <Login />}
       />
