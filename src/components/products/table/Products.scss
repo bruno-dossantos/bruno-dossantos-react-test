@@ -1,0 +1,25 @@
+@import "../../../assets/styles/variables";
+
+.button {
+  border: none;
+  border-radius: 10px;
+  margin-left: 25px !important;
+  color: $white-color;
+  background-color: $primary-color;
+  font-weight: 500;
+  width: auto;
+  &:disabled {
+    background-color: $light-gray;
+    cursor: not-allowed;
+  }
+}
+
+.active > .page-link {
+  color: $white-color !important;
+  background-color: $primary-color !important;
+  border-color: $primary-color !important;
+}
+
+.page-link {
+  color: $black-color !important;
+}

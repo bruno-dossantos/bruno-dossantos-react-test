@@ -1,0 +1,16 @@
+@import "../../../assets/styles/variables";
+
+.button {
+  height: 50px;
+  border: none;
+  border-radius: 0 10px;
+  color: $white-color;
+  background-color: $primary-color;
+  font-weight: 500;
+  margin-top: 15px;
+  width: auto;
+  &:disabled {
+    background-color: $light-gray;
+    cursor: not-allowed;
+  }
+}

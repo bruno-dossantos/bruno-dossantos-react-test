@@ -1,0 +1,18 @@
+@import "./variables";
+
+* {
+  font-family: $font-primary !important;
+}
+
+h1 {
+  font-weight: 800 !important;
+  color: $black-color;
+}
+
+label {
+  color: $light-gray;
+}
+
+input {
+  height: 50px !important;
+}
